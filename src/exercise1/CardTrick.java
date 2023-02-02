@@ -35,8 +35,8 @@ public class CardTrick {
         System.out.print("Enter a value - [1 - 13]: ");
         int val = _scanner.nextInt();
 	    Card userCard = new Card(val, suit);
-        for (int i = 0; i < magicHand.length; i++) {
-            if (userCard.getValue() == magicHand[i].getValue() && userCard.getSuit().equalsIgnoreCase(magicHand[i].getSuit())) {
+        for (int i = 0; i < hand.length; i++) {
+            if (userCard.getValue() == hand[i].getValue() && userCard.getSuit().equalsIgnoreCase(hand[i].getSuit())) {
                 System.out.println("You Win! Your card was found in the magic hand.");
                 return;
 	    }
